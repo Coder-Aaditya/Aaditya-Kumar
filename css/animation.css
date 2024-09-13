@@ -1,0 +1,38 @@
+/*Hover Animations*/
+
+.border-animation:hover{
+    border-top: .1rem solid #fd7e00;
+    border-left: .1rem solid #f8f8f8;
+    border-right: .1rem solid #ffffff;
+    border-bottom: .1rem solid #00ff3c;
+    padding: .13rem;
+
+}
+
+.normal-color:hover{
+    color: #9d0ff0;
+}
+
+.bg:hover{
+    background-color: ;
+}
+/* Focus Animations*/
+
+.orange-color:focus{
+    color: #fd7e00;
+}
+
+.red-color:focus{
+    color: #fd0000;
+}
+
+/*Focus Background*/
+.red-bg:focus{
+    background-color: #fd0000; 
+    color: #ffffff;
+}
+
+.green-bg:focus{
+    background-color: #00ff3c;
+    color: #ffffff;
+}

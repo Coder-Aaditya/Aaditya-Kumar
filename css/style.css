@@ -1,0 +1,538 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+    overflow: hidden;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+/*Top Banner Coding*/
+
+.top-banner{
+    background-image: url(../assets/images/grid\ black.png);
+    background-color: #0f1111;
+    background-size: 300px;
+    margin-bottom: 0px;
+    display: flex;
+
+}
+
+.banner-text{
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    font-weight: 550;
+    letter-spacing:.19rem;
+}
+
+
+.news{
+    width: 7rem;
+    height: 2.5rem;
+    background-color: #71b2f7;
+    text-align: center;
+    justify-content: center;
+    float: left;
+    margin-top: .5rem;
+    margin-left: 3rem;
+}
+
+.news-text{
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    margin-top: .4rem;
+
+}
+
+.top-banner.container marquee{
+    width: 80%;
+}
+
+
+
+.main-nav{
+    
+    justify-content: space-between;
+    position: relative;
+    background-color: #222f3d;
+    width: 100%;
+    height: 40px;
+    padding-left: 2rem;
+    padding-right: 6rem;
+}
+
+.company-logo img{
+   
+}
+
+.nav-links{
+    flex-basis: 730px;
+}
+
+.nav-links ul{
+    justify-content: end;
+    gap: 40px;
+}
+
+.nav-toggle{
+    display: none;
+    font-size: 30px;
+}
+
+.hover-link{
+    color: #ffffff;
+    
+}
+
+.quiz-menu{
+    animation: quiz 2s infinite;
+    font-weight: 900;
+    padding: .4rem;
+    
+}
+
+
+.notes-dropdown{
+    position: relative;
+   
+}
+.notes-dropdown-area{
+    width: 150px;
+    position: absolute;
+    background-color: #222f3d;
+    top:18px;
+    left: 0px;
+    display: none;
+    border: 1px solid #fff;
+    
+}
+.notes-dropdown-text{
+    
+    height: 30px;
+    padding-top: 5px;
+    text-align: center;
+}
+.notes-dropdown-link{
+    color: #ffffff;
+    text-decoration: none;  
+}
+
+.notes-dropdown:hover .notes-dropdown-area{
+    display: block;
+    box-shadow:0px 0px 1.5rem rgb(0, 213, 255) ;border: none;
+    background-color: rgba(255, 111, 0, );
+}
+
+
+@keyframes quiz{
+    0%{}
+    10%{color: #ff0090;}
+    20%{color: #00fbff;}
+    30%{color: #ff0090;}
+    40%{color: #00ffff;}
+    50%{color: #ff0090;}
+    60%{color: #00eeff;}
+    70%{color: #ff0090;}
+    80%{color: #00f2ff;}
+    90%{color: #ff0090;}
+    100%{color: #00eeff;}
+
+}
+/*Start Section Coding*/
+
+/*Start Hero Coding*/
+
+.hero-section{
+    width: 100%;
+    height: 35rem;
+    background-image: url(../image/hero.png);    
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.quiz-txt{
+    width: 100%;
+    height: 35rem;
+    padding-top: 7rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    
+    
+}
+.quiz-txt p{
+    color: #ffffff;
+    font-size: 7rem;
+    text-align: center;
+   
+}
+.quiz-txt button{
+    text-align: center;
+    width: 9rem;
+    height: 3rem;
+    cursor: pointer;
+    margin-top: 3rem;
+    background-color: #d7d5d5;
+    color: #000000;
+    font-weight: 700;
+    border: none;
+    font-size: .9rem;
+    border-radius: 2rem;
+    animation: color-bg 5s infinite;
+}
+.quiz-txt button:hover{
+    border-radius: 1rem;
+}
+.quiz-txt button:focus{
+    border-radius: 2rem;
+    background-color: #000000;
+    color: #ffffff;
+}
+/*Start Class Notes Coding*/
+.class-notes-box{
+    width: 100%;
+    height: 40rem;  
+    padding-top: 2rem; 
+    
+}
+
+.h1-text{
+    font-size: 2rem;
+    text-align: center;
+    
+}
+
+.p-text{
+    text-align: center;
+    font-size: 1rem;
+    color: #04091e;
+    margin-top: 1rem;
+    font-weight: 600;
+    letter-spacing: .2rem;
+   
+}
+
+.class-notes-image{
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+}
+
+.img-box{
+    width: 23%;
+    height: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    box-shadow: 7px 7px 7px rgb(59, 55, 55);
+    background-color: #ebeaff;
+    padding-bottom: 2rem;
+}
+
+
+
+.img-box img{
+    width: 100%;
+    
+
+}
+
+.img-box a{
+    width: 70px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+    text-align: center;
+    background-color: inherit;
+    border: 0px solid black;
+    border-radius:10px ;
+    animation: color-bg 5s infinite;
+}
+
+.semester-txt{
+    text-align: center;
+    margin:1rem;
+    font-weight: 500;
+}
+
+.class-notes-button{
+    
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.class-notes-button button{
+    width: 9rem;
+    
+    font-size: 1rem;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 40px;
+}
+
+.show-all-box{
+    width: 100%;
+    height: 5rem;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.show-all-box a{
+    text-decoration: none;
+    
+}
+.show-all-box button{
+    width: 6rem;
+    height: 2rem;
+    border:none;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 30px;
+    background-color: #ffffff;
+    animation: color-bg 5s infinite;
+}
+
+
+/*Start Notice Board Coding*/
+
+.result-box{
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+
+.notice-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    margin-top: 2rem;
+}
+.notice-board{
+    width: 30%;
+    background-color: #fcfcfc;
+    height: 30rem;
+    box-shadow:0px 0px 1rem rgb(0, 0, 0) ;
+    overflow: hidden;
+    padding: 1rem;
+    border-radius: .2rem;
+    padding-top: 0;
+    animation: color-bg 5s infinite; 
+    text-transform:capitalize;
+}
+@keyframes color-bg{
+    0%{box-shadow:0px 0px 1rem rgb(0, 0, 0) ;}
+    20%{box-shadow:0px 0px 1.5rem rgb(255, 98, 0) ;}
+    40%{box-shadow:0px 0px 1rem rgb(255, 0, 0) ;}
+    60%{box-shadow:0px 0px 1.5rem rgb(255, 0, 119) ;}
+    80%{box-shadow:0px 0px 1rem rgb(0, 238, 255) ;}
+    100%{box-shadow:0px 0px 1.5rem rgb(253, 0, 148) ;}
+}
+.notice ul{
+   text-align: center;
+}
+.notice li{
+    margin-bottom: 1rem;
+ }
+.notice-heading{
+    font-size: 2rem;
+	font-weight: 500;
+	background-color: #49d9e1;
+	margin-bottom: 20px;
+	color: #ffffff;
+    text-align: center;
+    animation: color-bg 5s infinite;
+}
+
+.notice-i{
+    font-weight: 700;
+    color: rgb(255, 0, 0);
+    margin-right: .5rem;
+}
+
+.ten-result li i{
+    color: rgb(255, 0, 157);
+    font-weight: 600;
+    margin-right: .5rem;
+   
+}
+.ten-result li{
+    margin-top: 1.5rem;
+   
+}
+
+/*Start Quiz Coding*/
+
+.quiz-container{
+    width: 100%; 
+   
+    margin-bottom: 5rem;
+}
+.quiz-box{
+    width: 100%;
+    padding-bottom: 2rem;
+    margin-top: -2rem;
+}
+.question-area{
+    width: 100%;
+    padding-top: 1rem;
+    margin-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.question-text{
+    font-weight: 600;
+    font-size: 1.5rem;
+
+}
+.answer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.answer button{
+    width:20%;
+    margin-top: 1rem;
+    padding: .8rem;
+    background-color: inherit;
+    border: none;
+    border: .15rem solid #cccccc;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+
+/* Start Footer Coding */
+footer{
+    background-color: #04091e;
+}
+.footer-area{
+    width: 100%;
+    height: 21rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 2rem;
+
+}
+
+.footer-box{
+    width: 25%;
+    height: 18rem;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: .5rem;
+    display: flex;
+    padding: 4rem;
+    
+}
+
+.footer-text{
+    color: #ffffff;
+    font-size:1.5rem;
+    margin-bottom: 1rem;
+    
+}
+.footer-result{
+    margin-top: 2rem;
+}
+
+.footer-box a{
+    color: #dddddd;
+    text-decoration: none;
+}
+
+.footer-contact-text{
+    color: #dddddd;
+    font-size: 1.1rem;
+    text-align: left;
+    margin-top: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+.footer-contact-ig{
+    width: 2.5rem;
+}
+
+.footer-contact-img{
+    width: 2rem;
+    margin-left: .3rem;
+    overflow: hidden;
+    float: right;
+    margin-top: 1rem;
+}
+
+
+.footer-contact{
+    margin-bottom: 3.5rem;    
+}
+.copyright{
+    width: 100%;
+    height: 4rem;
+    background-color: #04091e;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    border-top: 1px solid #ffffff;  
+    animation: color-bg 5s infinite;
+}
+
+.copyright p{
+    color: #bc79ff;
+}
+
+.copyright p a{
+    text-decoration: none;
+    color: #ff3c00;   
+}
+
+.animate{
+    width: 100px;
+    height: 3px;
+    background-color: #71b2f7;
+}

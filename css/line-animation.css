@@ -1,0 +1,26 @@
+.line-animation-box{
+    display: flex;
+    justify-content: center;
+    margin-top: .5rem;
+}
+
+.line-animation{
+    width: 10rem;
+    border-radius: 10px;
+    height: 5px;
+    background-color: #06a3da;
+
+}
+
+.line-animation-dot{
+    width: 6px;
+    height: 5px;
+    background-color: #fff;
+    animation: dot 10s infinite;
+    
+}
+@keyframes dot{
+    0%{}
+    50%{margin-left: 100%;}
+    100%{}
+}

@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* hero codind */
+
+.first-semester-hero{
+    width: 100%;
+    
+    background-image:url(../image/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-text{
+    font-size: 4rem;
+    color: #fff;
+    padding: 5rem 0;
+}
+/* notes container coding */
+.notes-detail{
+    padding: 0 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    
+}
+.notes-detail-box{
+    width: 30%;
+    height: 10rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-image: url(../image/header.jpg);
+    background-size: cover;
+    color: #fff;
+    margin: 2rem 0;
+    animation: color-bg 5s infinite;
+}
+.notes-detail-box h2{
+    font-size: 2rem;
+}
+.notes-detail-box h2 a:hover{
+    color: #000;
+}
+.notes-detail-box h2 a:focus{
+    color: #ff7b00;
+}
+
+/* Responsive coding */
+
+@media screen and (max-width:767px){
+    .hero-text{
+        font-size: 2.5rem;
+        padding: 2rem 0;
+    }
+    .notes-detail{
+        flex-direction: column;
+        padding: 0 ;
+    }
+    .notes-detail-box{
+        width: 80%;
+        height: 5rem;
+        
+    }
+    .notes-detail-box h2{
+        font-size: 1.3rem;
+    }
+}
+

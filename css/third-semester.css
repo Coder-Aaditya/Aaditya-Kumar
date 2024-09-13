@@ -1,0 +1,176 @@
+/* ---------------------August Month Coding
+---------------------------------------------------------------- */
+
+body{
+    background-color: #04091e;
+}
+
+.month-detail{
+    padding: 0 0rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #000000;
+    flex-wrap: wrap;
+}
+
+.month-box{
+    width: 12%;
+    height: 4rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-image: url(../image/header.jpg);
+    background-size: cover;
+    color: #fff;
+    margin: 2rem 1rem;
+    animation: color-bg 5s infinite;
+}
+.month-box h2{
+    font-size:1.5rem;
+}
+.month-box h2 a:hover{
+    color: #000;
+}
+.month-box h2 a:focus{
+    color: #ff7b00;
+}
+
+
+
+
+
+
+.august-container{
+    width: 100%;
+    margin: 0 0 3rem 0;
+    background-color: rgb(255, 103, 21);
+    padding:1rem 5rem 2rem 5rem;
+    
+    /* animation: color-bg 5s infinite; */
+   
+}
+.august-container h1{
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    
+}
+.third-semester-area{
+    width: 100%;
+    
+    background-image: url(../image/header.jpg);
+    background-size: contain;
+    
+    margin-top: 1rem;
+    display: flex;
+    color: #fff;
+}
+.date-box{
+    width: 20%;
+    height: 5rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.date-box p{
+    font-size: 2rem;
+}
+.notes-text{
+    width: 50%;
+    height: 5rem;
+    
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+.button-area{
+    width: 30%;
+    height: 5rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.button-area button{
+    width: 45%;
+    height: 3rem;
+    background-color: inherit;
+    border: .1rem solid #fff;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 2rem;
+    animation: color-bg 1s infinite;
+}
+.button-area button a{
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.button-area button a:hover{
+    color: #000000;  
+}
+.button-area button a:focus{
+    color: #ff7300;  
+}
+
+
+/* Responsive coding */
+
+@media screen and (max-width:768px){
+    
+    .month-box{
+        width: 25%;
+        height: 2.5rem;
+        margin: .5rem .5rem;
+        border-radius: .5rem;
+        text-transform: uppercase;
+        
+    }
+    .month-box h2{
+        font-size:.7rem;
+    }
+
+    .third-semester-area{
+        flex-direction: column;
+        background-size: cover;
+    }
+    .august-container{
+        padding:1rem 1rem 1rem 1rem;
+    }
+    
+    .date-box{
+        width: 100%;
+        height: 2rem;
+        padding-top: 1rem;
+    }
+    .date-box p{
+        font-size: 1.5rem;
+        
+    }
+
+    .notes-text{
+        width: 100%;
+        height: 3rem;
+        padding: 0rem 0rem;
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+    .button-area{
+        width: 100%;
+        height: 3rem;
+    }
+    .button-area button{
+        height: 2rem;
+        font-size:2lvh;
+        font-weight: 900;
+    }
+}
