@@ -267,7 +267,8 @@
     </div>  
     
     <div class="copyright">
-        <p><a href="audio/Maa.mp3">🎵</a> This website is made by <a href="#" class=" border-animation red-color" >Aaditya Kumar</a></p>
+        <audio src="audio/Maa.mp3" id="audio" style="display:block";></audio>
+        <p><i class="fa-solid fa-play" id="play" onclick="play()"></i> This website is made by <a href="#" class=" border-animation red-color" >Aaditya Kumar</a> <i class="fa-solid fa-pause" id="pause" onclick="pause()"></i></p>
     </div>
     </footer>
 
@@ -281,6 +282,15 @@
         toggleButton.addEventListener('click', () => {
             navLinks.classList.toggle('active');
         })
+
+        function play(){
+            var a = document.getElementById("audio");
+            a.play();
+        }
+        function pause(){
+            var a = document.getElementById("audio");
+            a.pause();
+        }
     </script>
 </body>
 </html>
